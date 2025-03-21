@@ -19,6 +19,7 @@ setInterval(() => {
 
 	daysElement.innerHTML = Math.floor(diff / dayMilliseconds)
 	daysLiteral.innerHTML = daysElement.innerHTML == '1' ? 'day' : 'days'
+  
 	diff %= dayMilliseconds
 
 	hoursElement.innerHTML = Math.floor(diff / hourMilliseconds)
@@ -37,6 +38,4 @@ setInterval(() => {
 	secondsElement.innerHTML = secondsElement.innerHTML.padStart(4, '0')
 
 	diff %= 1000
-
-	console.log(diff)
-}, 0)
+}, 10)
