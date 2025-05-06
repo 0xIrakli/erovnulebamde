@@ -67,3 +67,13 @@ body {
 	font-size: 4vw;
 	font-weight: 800;
 }
+
+.info-icon {
+	position: absolute;
+	right: 0;
+	top: 0;
+
+	width: 42px;
+	margin: 16px;
+	cursor: pointer;
+}
