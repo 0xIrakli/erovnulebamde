@@ -41,11 +41,12 @@ body {
 	gap: 1rem;
 }
 
-.container h4 {
-	text-align: left;
-	font-size: max(16px, 1vw);
+.container h4,
+u {
+	text-align: center;
+	font-size: max(18px, 1.1vw);
 	font-weight: 600;
-	color: rgb(31, 31, 31);
+	color: rgb(41, 41, 41);
 }
 
 .time-container {
@@ -66,4 +67,14 @@ body {
 .time-container strong {
 	font-size: 4vw;
 	font-weight: 800;
+}
+
+.info-icon {
+	position: absolute;
+	right: 0;
+	top: 0;
+
+	width: 42px;
+	margin: 16px;
+	cursor: pointer;
 }
