@@ -10,12 +10,12 @@ const minutesLiteral = document.getElementById('minutesLiteral')
 const secondsElement = document.getElementById('seconds')
 
 setInterval(() => {
-	erovnulebi = new Date('07/03/2025').getTime()
-	diff = erovnulebi - Date.now()
-
-	dayMilliseconds = 86400000
+        dayMilliseconds = 86400000
 	hourMilliseconds = 3600000
 	minuteMilliseconds = 60000
+	
+	erovnulebi = new Date('07/03/2025').getTime()
+	diff = erovnulebi - Date.now() + hourMilliseconds * 8
 
 	daysElement.innerHTML = Math.floor(diff / dayMilliseconds)
 	daysLiteral.innerHTML = daysElement.innerHTML == '1' ? 'day' : 'days'
