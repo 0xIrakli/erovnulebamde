@@ -10,7 +10,7 @@ const minutesLiteral = document.getElementById('minutesLiteral')
 const secondsElement = document.getElementById('seconds')
 
 setInterval(() => {
-	erovnulebi = new Date('07/02/2025').getTime()
+	erovnulebi = new Date('07/03/2025').getTime()
 	diff = erovnulebi - Date.now()
 
 	dayMilliseconds = 86400000
